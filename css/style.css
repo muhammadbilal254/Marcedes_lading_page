@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgba(34, 36, 42, 1);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.nav-link ul li {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Center head */
+
+.centerHead {
+  margin-block: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.centerHead h1 {
+  font-size: 2.5em;
+  color: white;
+  font-weight: 400;
+}
+
+.centerHead h1 span {
+  font-weight: 700;
+}
+
+.centerHead button {
+  margin: 0.5rem;
+  padding: 0.8rem 2rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4rem;
+  outline: none;
+  border: 1px solid white;
+  background: linear-gradient(90deg, #cc2b5e 0%, #753a88 100%);
+}
+
+.center_car {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car img {
+  width: 84%;
+}
+
+.side h3 {
+  color: rgba(255, 69, 58, 1);
+  font-style: italic;
+  font-weight: 400;
+}
+.side p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.side small {
+  color: rgba(255, 255, 255, 1);
+  font-weight: lighter;
+  margin-top: 5px;
+  font-size: 0.6rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.footer ul li a {
+  color: white;
+}
+
+.dot {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .centerHead {
+    margin-block: 1rem;
+  }
+
+  .centerHead h1 {
+    font-size: 1.5rem;
+  }
+
+  .centerHead button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    height: auto;
+  }
+  .center_car {
+    flex-direction: column;
+  }
+}
